@@ -1,0 +1,24 @@
+{
+  "name": "marcenaria-artesanal",
+  "version": "1.0.0",
+  "description": "Site de Marcenaria Artesanal com Calculadora de Orçamentos",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static build - no build process needed'",
+    "start": "echo 'Static site - no server needed'"
+  },
+  "keywords": [
+    "marcenaria",
+    "móveis",
+    "artesanal",
+    "orçamento",
+    "portfolio"
+  ],
+  "author": "Marcenaria Artesanal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/marcenaria-artesanal"
+  },
+  "homepage": "https://marcenariaartesanal.netlify.app"
+}

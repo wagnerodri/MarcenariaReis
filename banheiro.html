@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Gourmet - Marcenaria Artesanal</title>
+    
+    <!-- Bootstrap & Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- CSS Universal para Modais -->
+</head>
+<body>
+   <!-- Navegação Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hammer me-2"></i>Marcenaria Reis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="moveisDropdown" role="button" data-bs-toggle="dropdown">
+                            Móveis
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="atelie.html">Ateliê</a></li>
+                                <li><a class="dropdown-item" href="banheiro.html">Banheiro</a></li>
+                                <li><a class="dropdown-item" href="cozinha.html">Cozinha</a></li>
+                                <li><a class="dropdown-item" href="dormitorios.html">Dormitórios</a></li>
+                                <li><a class="dropdown-item" href="guarda-roupa.html">Guarda-Roupa</a></li>
+                                <li><a class="dropdown-item" href="recepcao.html">Recepção</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="processo.html">Nosso Processo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #1a1a2e;">
+                        <i class="fas fa-bath me-3 text-info"></i>
+                        Banheiro
+                    </h1>
+                    <p class="lead" style="color: #4a5568;">
+                        Renove seu banheiro com móveis planejados, materiais de alta qualidade e soluções inteligentes para espaços modernos, elegantes e funcionais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Banheiros -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2 class="text-center fw-bold mb-4" style="color: #ffffff; background: linear-gradient(135deg, #1a1a2e 0%, #2d3748 100%); padding: 20px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Projetos de Banheiro</h2>
+                    <p class="text-center" style="color: #0c0b0b; font-size: 1.1rem; font-weight: 500; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Veja nossos projetos de banheiro e clique nas imagens para conhecer os materiais, técnicas e inspirações de cada ambiente.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                                <!-- BANHEIRO Completa 4 -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card gallery-card" onclick="openGallery('bar-atelie')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                        <div class="gallery-image">
+                                            <img src="./img/banheiro/3.jpeg" alt="Bar Gourmet" class="gallery-img">
+                                            <div class="material-badge">Banheiro</div>
+                                            <div class="overlay-zoom">
+                                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                          
+                                            
+                                            <div class="price-tag">Faça o seu orçamento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                <!-- BANHEIRO Completa 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card gallery-card" onclick="openGallery('atelie-completa')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <div class="gallery-image">
+                            <img src="./img/banheiro/1.jfif" alt="Banheiro" class="gallery-img">
+                            <div class="material-badge">Banheiro</div>
+                            <div class="overlay-zoom">
+                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                            </div>
+                        </div>
+                        <div class="card-body">
+                           
+                         
+                            <div class="price-tag">Faça o seu orçamento</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BANHEIRO Completa 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card gallery-card" onclick="openGallery('bancada-churrasqueira')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <div class="gallery-image">
+                            <img src="./img/banheiro/2.jfif" alt="Banheiro" class="gallery-img">
+                            <div class="material-badge">Banheiro</div>
+                            <div class="overlay-zoom">
+                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                            </div>
+                        </div>
+                        <div class="card-body">
+                         
+                         
+                            <div class="price-tag">Faça o seu orçamento</div>
+                        </div>
+                    </div>
+                </div>
+
+                     <!-- BANHEIRO Completa 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card gallery-card" onclick="openGallery('atelie-compacta')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <div class="gallery-image">
+                            <img src="./img/banheiro/3.jpeg" alt="Banheiro" class="gallery-img">
+                            <div class="material-badge">Banheiro</div>
+                            <div class="overlay-zoom">
+                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          
+                           
+                            <div class="price-tag">Faça o seu orçamento</div>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- BANHEIRO Completa 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card gallery-card" onclick="openGallery('bar-atelie')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <div class="gallery-image">
+                            <img src="./img/banheiro/WhatsApp Image 2025-11-27 at 14.17.34 (2).jpeg" alt="Bar Gourmet" class="gallery-img">
+                            <div class="material-badge">Banheiro</div>
+                            <div class="overlay-zoom">
+                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          
+                            
+                            <div class="price-tag">Faça o seu orçamento</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BANHEIRO Completa 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card gallery-card" onclick="openGallery('deck-atelie')" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <div class="gallery-image">
+                            <img src="./img/banheiro/bfddf06e-ac8d-499c-be14-0c573de85299.jfif" alt="Deck Gourmet" class="gallery-img">
+                            <div class="material-badge">Banheiro</div>
+                            <div class="overlay-zoom">
+                                <i class="fas fa-search-plus me-2"></i>Ver Detalhes
+                            </div>
+                        </div>
+                        <div class="card-body">
+                       
+                            
+                            <div class="price-tag">Faça o seu orçamento</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal da Galeria -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="galleryModalLabel">Detalhes do Projeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img id="modalImage" src="" alt="" class="img-fluid modal-image rounded">
+                        </div>
+                        <div class="col-lg-5">
+                            <div id="modalContent">
+                                <!-- Conteúdo será preenchido via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/5511949433898?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" class="btn btn-success btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        Solicitar Orçamento
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 text-white" style="background: #1a1a2e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-hammer me-2"></i>Marcenaria Reis</h5>
+                    <p>Qualidade, tradição e inovação em cada projeto.</p>
+                    <p><strong>Atendimento:</strong><br>Segunda a Sexta, 8h às 18h<br>Sábados, 8h às 12h</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-phone me-2"></i>Entre em Contato</h5>
+                    <p><i class="fab fa-whatsapp me-2" style="color: #25d366;"></i><strong>WhatsApp:</strong> (11) 94943-3898</p>
+                    <p><i class="fas fa-envelope me-2" style="color: #e74c3c;"></i><strong>Email:</strong> rafinhafak@hotmail.com</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-share-alt me-2"></i>Redes Sociais</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+                            <i class="fab fa-instagram me-3" style="color: #E4405F; font-size: 1.2rem;"></i>
+                            <span>@marcenaria_reis</span>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+                            <i class="fab fa-facebook me-3" style="color: #1877F2; font-size: 1.2rem;"></i>
+                            <span>Marcenaria Reis</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Marcenaria Reis. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="fas fa-heart" style="color: #e74c3c;"></i> para você</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/enhanced-animations.js"></script>
+    
+    <script>
+        // Banco de dados com detalhes completos do Ateliê
+        const atelieData = {
+            // TROCAR IMAGEM DO CARD 1 DO BANHEIRO AQUI
+            'atelie-completa': {
+                title: 'Área Gourmet Completa',
+                image: 'img/banheiro/1.jfif',
+                price: 'Entrar em contato para orçamento',
+                description: 'Projeto completo de área gourmet com todos os elementos necessários para criar um espaço de entretenimento perfeito. Ideal para quem ama receber e busca funcionalidade máxima.',
+                materials: [
+                    
+                ],
+                includes: [
+                    
+                ],
+                warranty: '3 anos de garantia total',
+                delivery: '45 a 60 dias úteis'
+            },
+            // TROCAR IMAGEM DO CARD 2 DO BANHEIRO AQUI
+            'bancada-churrasqueira': {
+                title: 'Bancada com Churrasqueira',
+                image: 'img/banheiro/2.jfif',
+                price: 'Entrar em contato para orçamento',
+                description: 'Bancada em pedra natural com churrasqueira integrada, perfeita para quem prioriza o churrasco e quer um espaço elegante e funcional.',
+                materials: [
+                    
+                ],
+                includes: [
+                   
+                ],
+                warranty: '2 anos de garantia',
+                delivery: '35 a 45 dias úteis'
+            },
+            // TROCAR IMAGEM DO CARD 3 DO BANHEIRO AQUI
+            'atelie-compacta': {
+                title: 'Área Gourmet Compacta',
+                image: 'img/banheiro/3.jpeg',
+                price: 'Entrar em contato para orçamento',
+                description: 'Solução inteligente para espaços reduzidos, oferecendo máxima funcionalidade em área mínima. Perfeita para apartamentos e casas com varanda pequena.',
+                materials: [
+                    
+                ],
+                includes: [
+                    
+                ],
+                warranty: '18 meses de garantia',
+                delivery: '25 a 35 dias úteis'
+            },
+            // TROCAR IMAGEM DO CARD 4 DO BANHEIRO AQUI
+            'bar-atelie': {
+                title: 'Bar Gourmet',
+                image: 'img/banheiro/WhatsApp Image 2025-11-27 at 14.17.34 (2).jpeg',
+                price: 'A partir de R$ 9.500',
+                description: 'Bar sofisticado com adega climatizada e área de preparo de drinks. Ideal para degustações e momentos especiais com estilo refinado.',
+                materials: [
+                  
+                ],
+                includes: [
+                    
+                ],
+                warranty: '2 anos de garantia',
+                delivery: '40 a 50 dias úteis'
+            },
+            // TROCAR IMAGEM DO CARD 5 DO Banheiro AQUI
+            'ilha-atelie': {
+                title: 'Ilha Gourmet',
+                image: 'img/banheiro/82f2ef48-789a-4c1f-9555-033edc47fb74.jfif',
+                price: 'A partir de R$ 7.200',
+                description: 'Ilha central multifuncional que integra preparo, cocção e área de refeições. Perfeita para cozinhas abertas e espaços integrados.',
+                materials: [
+                 
+                ],
+                includes: [
+               
+                ],
+                warranty: '2 anos de garantia',
+                delivery: '30 a 40 dias úteis'
+            },
+            // TROCAR IMAGEM DO CARD 6 DO Banheiro AQUI
+            'deck-atelie': {
+                title: 'Deck Gourmet',
+                image: 'img/banheiro/bfddf06e-ac8d-499c-be14-0c573de85299.jfif',
+                price: 'A partir de R$ 5.500',
+                description: 'Área externa rústica com deck de madeira e churrasqueira tradicional. Ideal para quem busca ambiente natural e aconchegante.',
+                materials: [
+                    
+                ],
+                includes: [
+                  
+                ],
+                warranty: '1 ano de garantia',
+                delivery: '20 a 30 dias úteis'
+            }
+        };
+
+        // Função para abrir galeria (versão universal que funciona com IDs vazios)
+        function openGallery(productId) {
+            const product = atelieData[productId];
+            
+            // Se não encontrar o produto específico, usar dados padrão
+            if (!product || productId === '') {
+                const fallbackData = {
+                    title: 'Área Gourmet Personalizada',
+                    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                    price: 'Consulte preço',
+                    description: 'Área gourmet planejada sob medida com acabamentos de qualidade e design exclusivo para suas confraternizações.',
+                    materials: ['Bancada em granito natural', 'Armários em MDF com acabamento UV', 'Churrasqueira em tijolo refratário', 'Sistema de exaustão profissional'],
+                    includes: ['Projeto 3D personalizado', 'Instalação completa incluída', 'Garantia de 2 anos', 'Manutenção pós-venda'],
+                    warranty: '2 anos de garantia completa',
+                    delivery: '45 dias úteis para entrega'
+                };
+                
+                document.getElementById('galleryModalLabel').textContent = fallbackData.title;
+                document.getElementById('modalImage').src = fallbackData.image;
+                document.getElementById('modalImage').alt = fallbackData.title;
+
+                const modalContent = document.getElementById('modalContent');
+                modalContent.innerHTML = `
+                    <div class="price-tag mb-3">${fallbackData.price}</div>
+                    <p class="mb-4">${fallbackData.description}</p>
+                    
+                    <div class="material-info">
+                        <h6 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Materiais e Especificações</h6>
+                        <ul class="material-list">
+                            ${fallbackData.materials.map(material => `<li>${material}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="material-info">
+                        <h6 class="fw-bold mb-3"><i class="fas fa-check-circle me-2"></i>Itens Inclusos</h6>
+                        <ul class="material-list">
+                            ${fallbackData.includes.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <i class="fas fa-shield-alt fa-2x text-success mb-2"></i>
+                                <p class="small mb-0"><strong>${fallbackData.warranty}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <i class="fas fa-truck fa-2x text-primary mb-2"></i>
+                                <p class="small mb-0"><strong>${fallbackData.delivery}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Reutilizar instância do modal para melhor performance
+                const modalElement = document.getElementById('galleryModal');
+                let modalInstance = bootstrap.Modal.getInstance(modalElement);
+                if (!modalInstance) {
+                    modalInstance = new bootstrap.Modal(modalElement);
+                }
+                modalInstance.show();
+                return;
+            }
+
+            // Atualizar modal com dados específicos
+            document.getElementById('galleryModalLabel').textContent = product.title;
+            document.getElementById('modalImage').src = product.image;
+            document.getElementById('modalImage').alt = product.title;
+
+            // Criar conteúdo detalhado
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="price-tag mb-3">${product.price}</div>
+                <p class="mb-4">${product.description}</p>
+                
+                <div class="material-info">
+                    <h6 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Materiais e Especificações</h6>
+                    <ul class="material-list">
+                        ${product.materials.map(material => `<li>${material}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="material-info">
+                    <h6 class="fw-bold mb-3"><i class="fas fa-check-circle me-2"></i>Itens Inclusos</h6>
+                    <ul class="material-list">
+                        ${product.includes.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt fa-2x text-success mb-2"></i>
+                            <p class="small mb-0"><strong>${product.warranty}</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <i class="fas fa-truck fa-2x text-primary mb-2"></i>
+                            <p class="small mb-0"><strong>${product.delivery}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Reutilizar instância do modal para melhor performance
+            const modalElement = document.getElementById('galleryModal');
+            let modalInstance = bootstrap.Modal.getInstance(modalElement);
+            if (!modalInstance) {
+                modalInstance = new bootstrap.Modal(modalElement);
+            }
+            modalInstance.show();
+        }
+    </script>
+</body>
+</html>

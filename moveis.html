@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móveis - Marcenaria Artesanal</title>
+    
+    <!-- Bootstrap & Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="./css/css-universal-modal.css?v=2025" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegação Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hammer me-2"></i>Marcenaria Artesanal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ambientesDropdown" role="button" data-bs-toggle="dropdown">
+                            Ambientes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dormitorios.html">Dormitórios</a></li>
+                            <li><a class="dropdown-item" href="area-gourmet.html">Área Gourmet</a></li>
+                            <li><a class="dropdown-item" href="cozinha.html">Cozinha</a></li>
+                            <li><a class="dropdown-item" href="sala-estar.html">Sala de Estar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="moveisDropdown" role="button" data-bs-toggle="dropdown">
+                            Móveis
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="atelie.html">Ateliê</a></li>
+                                <li><a class="dropdown-item" href="banheiro.html">Banheiro</a></li>
+                                <li><a class="dropdown-item" href="cozinha.html">Cozinha</a></li>
+                                <li><a class="dropdown-item" href="dormitorios.html">Dormitórios</a></li>
+                                <li><a class="dropdown-item" href="guarda-roupa.html">Guarda-Roupa</a></li>
+                                <li><a class="dropdown-item" href="recepcao.html">Recepção</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="processo.html">Nosso Processo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #1a1a2e;">
+                        <i class="fas fa-couch me-3 text-warning"></i>
+                        Móveis Sob Medida
+                    </h1>
+                    <p class="lead" style="color: #4a5568;">
+                        Móveis únicos e funcionais, projetados especialmente para suas necessidades e estilo de vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Armazenamento -->
+    <section class="py-5">
+        <!-- Seções Dinâmicas por Categoria de Imagem -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="text-center mb-5" style="color: #1a1a2e;">
+                            <i class="fas fa-images me-2 text-warning"></i>
+                            Galeria de Móveis
+                        </h2>
+                    </div>
+                </div>
+                <!-- Ateliê -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Ateliê</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DO ATELIÊ AQUI -->
+                    <div class="row">
+                        <div class="col-md-4 mb-4" style="display: flex; flex-wrap: wrap;">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/atelie/0449e28d-1677-4a9c-93f7-1086d91e1812.jfif" class="card-img-top" alt="Ateliê 1" style="height: 250px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/atelie/22dc998b-9ab1-4460-b24b-a174e23806bb.jfif" class="card-img-top" alt="Ateliê 2" style="height: 250px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/atelie/4cdd9a63-98fc-403c-8293-65e7ad2462eb.jfif" class="card-img-top" alt="Ateliê 3" style="height: 250px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <!-- Adicione os demais arquivos da pasta img/atelie como cards semelhantes -->
+                    </div>
+                </div>
+                <!-- Cozinha-Gourmet -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Cozinha-Gourmet</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DE COZINHA E GOURMET AQUI -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/cozinha/7.jfif" class="card-img-top" alt="Cozinha 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/gourmet/area gourmet.jfif" class="card-img-top" alt="Gourmet 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/gourmet/area gourmet1.jfif" class="card-img-top" alt="Gourmet 2" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- Adicione os demais arquivos das pastas img/cozinha e img/gourmet como cards semelhantes -->
+                </div>
+                <!-- Banheiro -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Banheiro</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DO BANHEIRO AQUI -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/banheiro/82f2ef48-789a-4c1f-9555-033edc47fb74.jfif" class="card-img-top" alt="Banheiro 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/banheiro/bfddf06e-ac8d-499c-be14-0c573de85299.jfif" class="card-img-top" alt="Banheiro 2" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- Adicione os demais arquivos da pasta img/banheiro como cards semelhantes -->
+                </div>
+                <!-- Dormitórios -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Dormitórios</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DOS DORMITÓRIOS AQUI -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/dormitorio/036250c9-f392-49ce-b425-39c8089dd5cb.jfif" class="card-img-top" alt="Dormitório 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/dormitorio/404a57a7-e7fa-4467-a606-73963465d873.jfif" class="card-img-top" alt="Dormitório 2" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/dormitorio/47944807-625c-44f5-9fca-de017c75c4f6.jfif" class="card-img-top" alt="Dormitório 3" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- Adicione os demais arquivos da pasta img/dormitorio como cards semelhantes -->
+                </div>
+                <!-- Guarda-Roupa -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Guarda-Roupa</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DO GUARDA-ROUPA AQUI -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/guarda-roupa/a9b42f10-8c97-48bc-a175-949c7a186893.jfif" class="card-img-top" alt="Guarda-Roupa 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/guarda-roupa/ade25ee0-ea26-46ed-ba2c-8cbaf120b502.jfif" class="card-img-top" alt="Guarda-Roupa 2" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/guarda-roupa/ec324d12-445a-41a8-a19f-38f262874304.jfif" class="card-img-top" alt="Guarda-Roupa 3" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- Adicione os demais arquivos da pasta img/guarda-roupa como cards semelhantes -->
+                </div>
+                <!-- Recepção -->
+                <h3 class="mb-4" style="color: #1a1a2e;">Recepção</h3>
+                <div class="row">
+                    <!-- TROCAR AS IMAGENS DA RECEPÇÃO AQUI -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/recepção/45929ca6-addb-4ee9-9346-91937f641cdd.jfif" class="card-img-top" alt="Recepção 1" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/recepção/8247f765-8bd2-45d7-93f9-0b86a41390b1.jfif" class="card-img-top" alt="Recepção 2" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/recepção/8743b575-e82f-4a91-a1e1-1087b569a565.jfif" class="card-img-top" alt="Recepção 3" style="height: 250px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <!-- Adicione os demais arquivos da pasta img/recepção como cards semelhantes -->
+                </div>
+            </div>
+        </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-5" style="color: #1a1a2e;">
+                        <i class="fas fa-table me-2 text-warning"></i>
+                        Mesas & Bancadas
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" alt="Bancada Gourmet" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Bancada Gourmet</h5>
+                            <p class="card-text">
+                                Bancada sob medida para área gourmet com design moderno, funcional e resistente.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Tampo em granito ou quartzito</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Estrutura reforçada</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Gavetas com trilhos telescópicos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Espaço para equipamentos embutidos</li>
+                            </ul>
+                            <a href="https://wa.me/11932563211" class="btn btn-success" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" alt="Mesa de Jantar" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Mesa de Jantar</h5>
+                            <p class="card-text">
+                                Mesa de jantar personalizada com design único para reunir família e amigos.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Madeira maciça de qualidade</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Tamanhos personalizados</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Acabamento resistente</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Design atemporal</li>
+                            </ul>
+                            <a href="https://wa.me/11932563211" class="btn btn-success" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Assentos & Outros -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-5" style="color: #1a1a2e;">
+                        <i class="fas fa-chair me-2 text-warning"></i>
+                        Assentos & Outros Móveis
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" alt="Banco Baú" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Banco Baú</h5>
+                            <p class="card-text">
+                                Banco multifuncional com compartimento interno para armazenamento.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Assento estofado confortável</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Compartimento interno espaçoso</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Tampa com dobradiças especiais</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Tecido resistente e lavável</li>
+                            </ul>
+                            <a href="https://wa.me/11932563211" class="btn btn-success" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" alt="Rack TV" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rack/Painel TV</h5>
+                            <p class="card-text">
+                                Rack e painel para TV com design moderno e espaços para equipamentos.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Suporte para TVs até 65"</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Compartimentos para equipamentos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sistema de passagem de cabos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Design clean e moderno</li>
+                            </ul>
+                            <a href="https://wa.me/11932563211" class="btn btn-success" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 text-white" style="background: linear-gradient(135deg, #d4a574 0%, #c19653 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-4">Pronto para ter seus Móveis dos Sonhos?</h2>
+                    <p class="lead mb-4">
+                        Entre em contato conosco e transforme suas ideias em móveis únicos e funcionais.
+                    </p>
+                    <a href="https://wa.me/11932563211" class="btn btn-light btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        Solicitar Orçamento Gratuito
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 text-white" style="background: #1a1a2e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h5><i class="fas fa-hammer me-2"></i>Marcenaria Artesanal</h5>
+                    <p>Qualidade, tradição e inovação em cada projeto.</p>
+                    <p><strong>Atendimento:</strong> Segunda a Sexta, 8h às 18h | Sábados, 8h às 12h</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h5><i class="fas fa-phone me-2"></i>Entre em Contato</h5>
+                    <p><strong>WhatsApp:</strong> (11) 93256-3211</p>
+                    <p><strong>Email:</strong> warodri1@gmail.com</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <p class="text-center mb-0">&copy; 2025 Marcenaria Artesanal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/enhanced-animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

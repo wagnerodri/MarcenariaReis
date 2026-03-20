@@ -1,0 +1,12 @@
+# Netlify redirects file for Single Page Application
+/*    /index.html   200
+
+# Force HTTPS
+http://marcenariaartesanal.netlify.app/* https://marcenariaartesanal.netlify.app/:splat 301!
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
