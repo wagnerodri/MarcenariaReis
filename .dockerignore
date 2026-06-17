@@ -1,0 +1,6 @@
+.git
+.netlify
+backend/target
+node_modules
+*.log
+.env

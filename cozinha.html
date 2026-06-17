@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <title>Cozinha Planejada - Marcenaria Reis</title>
     <!-- Bootstrap & Font Awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -95,7 +96,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card gallery-card" onclick="openGallery('cozinha-classica')" data-bs-toggle="modal" data-bs-target="#galleryModal">
                         <div class="gallery-image">
-                            <img src="./img/cozinha/2.jpeg "Cozinha" class="gallery-img">
+                            <img src="./img/cozinha/2.jpeg" alt="Cozinha Clássica" class="gallery-img">
                             <div class="material-badge">Cozinha</div>
                             <div class="overlay-zoom">
                                 <i class="fas fa-search-plus me-2"></i>Ver Detalhes
@@ -198,7 +199,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://wa.me/5511949433898?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" class="btn btn-success btn-lg" target="_blank">
+                    <a href="https://wa.me/5511949433898?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp me-2"></i>
                         Solicitar Orçamento
                     </a>
@@ -218,18 +219,16 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5><i class="fas fa-phone me-2"></i>Entre em Contato</h5>
-                    <p><i class="fab fa-whatsapp me-2" style="color: #25d366;"></i><strong>WhatsApp:</strong> (11) 99494-33898</p>
+                    <p><i class="fab fa-whatsapp me-2" style="color: #25d366;"></i><strong>WhatsApp:</strong> (11) 94943-3898</p>
                     <p><i class="fas fa-envelope me-2" style="color: #e74c3c;"></i><strong>Email:</strong> rafinhafak@hotmail.com</p>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5><i class="fas fa-share-alt me-2"></i>Redes Sociais</h5>
                     <div class="d-flex flex-column gap-2">
-                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">
-                            <i class="fab fa-instagram me-3" style="color: #E4405F; font-size: 1.2rem;"></i>
-                            <span>@marcenaria_reis</span>
+                        <a href="https://instagram.com/marcenaria.artesanal" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none d-flex align-items-center"><i class="fab fa-instagram me-3" style="color: #E4405F; font-size: 1.2rem;"></i>
+                            <span>@marcenaria.artesanal</span>
                         </a>
-                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">
-                            <i class="fab fa-facebook me-3" style="color: #1877F2; font-size: 1.2rem;"></i>
+                        <a href="https://facebook.com/marcenaria.artesanal" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none d-flex align-items-center"><i class="fab fa-facebook me-3" style="color: #1877F2; font-size: 1.2rem;"></i>
                             <span>Marcenaria Reis</span>
                         </a>
                     </div>
@@ -249,139 +248,11 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/enhanced-animations.js"></script>
-    <script>
-        const cozinhaData = {
-            'cozinha-moderna': {
-                title: 'Cozinha Moderna Integrada',
-                image: 'img/cozinha/1.jpeg',
-                price: 'Faça o seu orçamento',
-                description: 'Cozinha contemporânea com conceito aberto, ilha central multifuncional e acabamentos premium. Ideal para famílias modernas que valorizam integração e funcionalidade.',
-                materials: [
-                    
-                ],
-                includes: [
-                    
-                ],
-                warranty: '3 anos de garantia total',
-                delivery: '50 a 65 dias úteis'
-            },
-            
-            'cozinha-classica': {
-                title: 'Cozinha Clássica',
-                image: 'img/cozinha/2.jpeg',
-                price: 'Faça o seu orçamento',
-                description: 'Elegância atemporal com móveis em madeira nobre e detalhes refinados. Perfeita para quem aprecia tradição e sofisticação.',
-                materials: [
-                    
-                ],
-                includes: [
-                  
-                ],
-                warranty: '5 anos garantia madeira',
-                delivery: '60 a 75 dias úteis'
-            },
-            'cozinha-compacta': {
-                title: 'Cozinha Compacta',
-                image: 'img/cozinha/3.jpeg',
-                price: 'Faça o seu orçamento',
-                description: 'Solução inteligente para espaços reduzidos, aproveitando cada centímetro disponível com funcionalidade máxima.',
-                materials: [
-                    
-                ],
-                includes: [
-                    
-                ],
-                warranty: '2 anos de garantia',
-                delivery: '30 a 40 dias úteis'
-            },
-            'cozinha-industrial': {
-                title: 'Cozinha Industrial',
-                image: 'img/cozinha/4.jpeg',
-                price: 'Faça o seu orçamento',
-                description: 'Estilo urbano com materiais industriais e funcionalidade profissional. Para quem busca durabilidade e design arrojado.',
-                materials: [
-                    
-                ],
-                includes: [
-                    
-                ],
-                warranty: '3 anos estrutura',
-                delivery: '45 a 55 dias úteis'
-            },
-            'cozinha-americana': {
-                title: 'Cozinha Americana',
-                image: 'img/cozinha/7.jfif',
-                price: 'Faça o seu orçamento',
-                description: 'Conceito aberto que integra cozinha e sala, criando ambiente social e familiar. Perfeita para receber e conviver.',
-                materials: [
-                    
-                ],
-                includes: [
-                    
-                ],
-                warranty: '2 anos de garantia',
-                delivery: '40 a 50 dias úteis'
-            },
-            'cozinha-gourmet': {
-                title: 'Cozinha Gourmet',
-                image: 'img/cozinha/6.jpeg',
-                price: 'Faça o seu orçamento',
-                description: 'O máximo em luxo e funcionalidade para chefs exigentes. Equipamentos profissionais e materiais premium definem este projeto.',
-                materials: [
-               
-                ],
-                includes: [
-                    
-                ],
-                warranty: '5 anos garantia total',
-                delivery: '75 a 90 dias úteis'
-            }
-        };
-        function openGallery(productId) {
-            const product = cozinhaData[productId];
-            if (!product) return;
-            document.getElementById('galleryModalLabel').textContent = product.title;
-            document.getElementById('modalImage').src = product.image;
-            document.getElementById('modalImage').alt = product.title;
-            const modalContent = document.getElementById('modalContent');
-            modalContent.innerHTML = `
-                <div class="price-tag mb-3">${product.price}</div>
-                <p class="mb-4">${product.description}</p>
-                <div class="material-info">
-                    <h6 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Materiais e Especificações</h6>
-                    <ul class="material-list">
-                        ${product.materials.map(material => `<li>${material}</li>`).join('')}
-                    </ul>
-                </div>
-                <div class="material-info">
-                    <h6 class="fw-bold mb-3"><i class="fas fa-check-circle me-2"></i>Itens Inclusos</h6>
-                    <ul class="material-list">
-                        ${product.includes.map(item => `<li>${item}</li>`).join('')}
-                    </ul>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-6">
-                        <div class="text-center">
-                            <i class="fas fa-shield-alt fa-2x text-success mb-2"></i>
-                            <p class="small mb-0"><strong>${product.warranty}</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-center">
-                            <i class="fas fa-truck fa-2x text-primary mb-2"></i>
-                            <p class="small mb-0"><strong>${product.delivery}</strong></p>
-                        </div>
-                    </div>
-                </div>
-            `;
-            // O modal será aberto automaticamente pelos atributos data-bs-toggle
-        }
-        // Otimização: Limpar conteúdo quando modal fecha para melhorar performance
-        document.getElementById('galleryModal').addEventListener('hidden.bs.modal', function () {
-            document.getElementById('modalContent').innerHTML = '';
-            document.getElementById('modalImage').src = '';
-        });
-    </script>
+
+    <script src="./js/gallery-modal.js"></script>
+    <script src="./js/gallery-data/cozinha.js"></script>
+    <script src="./js/image-fallback.js"></script>
+    <script src="./js/site.js"></script>
 </body>
 </html>
 

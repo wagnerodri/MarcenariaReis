@@ -341,7 +341,7 @@ ${dados.observacoes ? `📝 *Observações:*\n${dados.observacoes}\n\n` : ''}
 Gostaria de mais informações sobre este orçamento!`;
         
         // Número do WhatsApp (ajuste conforme necessário)
-        const numeroWhatsApp = '5511999999999'; // Formato: país + DDD + número
+        const numeroWhatsApp = '5511949433898';
         const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
         
         window.open(url, '_blank');

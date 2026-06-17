@@ -243,7 +243,7 @@ function filtrarProjetos(categoria = 'todos') {
 // Função para solicitar orçamento similar
 function solicitarOrcamentoSimilar(tituloProjeto) {
     const mensagem = `Olá! Vi o projeto "${tituloProjeto}" no site e gostaria de um orçamento para algo similar. Podemos conversar?`;
-    const numeroWhatsApp = '5511999999999';
+    const numeroWhatsApp = '5511949433898';
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
@@ -437,7 +437,7 @@ function enviarContatoRapido(event) {
     
     const textoWhatsApp = `Olá! Meu nome é ${nome}.\n\nTelefone: ${telefone}\n\nMensagem: ${mensagem}\n\nGostaria de mais informações sobre os serviços de marcenaria.`;
     
-    const numeroWhatsApp = '5511999999999';
+    const numeroWhatsApp = '5511949433898';
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
     window.open(url, '_blank');
     

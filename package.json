@@ -1,24 +1,18 @@
 {
-  "name": "marcenaria-artesanal",
+  "name": "marcenaria-reis",
   "version": "1.0.0",
-  "description": "Site de Marcenaria Artesanal com Calculadora de Orçamentos",
+  "description": "Site da Marcenaria Reis - móveis planejados sob medida",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static build - no build process needed'",
-    "start": "echo 'Static site - no server needed'"
+    "build": "echo Static site - no build needed",
+    "start": "npx serve ."
   },
-  "keywords": [
-    "marcenaria",
-    "móveis",
-    "artesanal",
-    "orçamento",
-    "portfolio"
-  ],
-  "author": "Marcenaria Artesanal",
+  "keywords": ["marcenaria", "móveis", "planejados", "orçamento"],
+  "author": "Marcenaria Reis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/marcenaria-artesanal"
+    "url": "https://github.com/wagnerodri/MarcenariaReis.git"
   },
-  "homepage": "https://marcenariaartesanal.netlify.app"
+  "homepage": "https://superb-kitsune-4b015c.netlify.app"
 }

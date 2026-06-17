@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://superb-kitsune-4b015c.netlify.app/sitemap.xml
