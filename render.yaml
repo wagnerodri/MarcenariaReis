@@ -2,6 +2,9 @@ services:
   - type: web
     name: marcenaria-reis
     runtime: docker
+    repo: https://github.com/wagnerodri/MR-com-sistema
+    branch: main
+    autoDeploy: true
     dockerfilePath: ./Dockerfile
     plan: free
     healthCheckPath: /actuator/health
