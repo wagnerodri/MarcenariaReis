@@ -34,13 +34,13 @@
   force = true
 
 [[redirects]]
-  from = "http://marcenariareis01.com.br/*"
-  to = "https://www.marcenariareis01.com.br/:splat"
+  from = "http://marcenariareis01.app.br/*"
+  to = "https://www.marcenariareis01.app.br/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://marcenariareis01.com.br/*"
-  to = "https://www.marcenariareis01.com.br/:splat"
+  from = "https://marcenariareis01.app.br/*"
+  to = "https://www.marcenariareis01.app.br/:splat"
   status = 301
   force = true
